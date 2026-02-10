@@ -1,15 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MOvie Watchlist</title>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <form id="movieForm">
+      <input type="text" id="title" placeholder="Movie Title" required />
+      <input type="text" id="director" placeholder="Director" required />
+      <input
+        type="number"
+        id="duration"
+        placeholder="Duration (min)"
+        required
+      />
+      <label>Watched: <input type="checkbox" id="isWatched" /></label>
+      <button type="submit">Add Movie</button>
+    </form>
 
-
+    <div id="movieList"></div>
+    <p id="movieCount"></p>
 
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
